@@ -1,0 +1,28 @@
+{
+  "id": "vrmoo.checkin.sub",
+  "name": "VR魔趣签到",
+  "description": "vrmoo.net 多账号每日自动签到",
+  "author": "@自用",
+  "icon": "https://www.vrmoo.net/favicon.ico",
+  "apps": [
+    {
+      "id": "vrmoo_checkin",
+      "name": "VR魔趣签到",
+      "desc": "支持多账号！在下方 JSON 数组中按格式添加账号即可，脚本自动依次登录签到。\n\n格式示例：\n[\n  {\"username\":\"账号1\",\"password\":\"密码1\"},\n  {\"username\":\"账号2\",\"password\":\"密码2\"}\n]",
+      "author": "@自用",
+      "icon": "https://www.vrmoo.net/favicon.ico",
+      "keys": [
+        "vrmoo_accounts"
+      ],
+      "settings": [
+        {
+          "id": "vrmoo_accounts",
+          "name": "账号列表（JSON 数组）",
+          "val": "[\n  {\"username\":\"账号1\",\"password\":\"密码1\"},\n  {\"username\":\"账号2\",\"password\":\"密码2\"}\n]",
+          "type": "textarea",
+          "desc": "填写账号密码 JSON 数组，支持多个账号。username 支持邮箱或用户名。"
+        }
+      ]
+    }
+  ]
+}
